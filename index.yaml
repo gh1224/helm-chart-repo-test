@@ -1,3 +1,44 @@
 apiVersion: v1
-entries: {}
-generated: "2024-02-06T15:48:55.075232+09:00"
+entries:
+  minio:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: minio-client
+          image: docker.io/bitnami/minio-client:2023.10.24-debian-11-r0
+        - name: minio
+          image: docker.io/bitnami/minio:2023.10.25-debian-11-r1
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:11-debian-11-r90
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2023.10.25
+    created: "2024-02-06T15:54:38.402359+09:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: a41ddab75eecda47191d3b9a64f5cb6fa85a69f34677825a28b5bb01543873d7
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: minio
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/minio
+    urls:
+    - minio-12.8.18.tgz
+    version: 12.8.18
+generated: "2024-02-06T15:54:38.399563+09:00"
